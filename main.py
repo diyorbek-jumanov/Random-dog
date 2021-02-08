@@ -16,8 +16,8 @@ def getUpdates():
     return data
 
 def sendPhoto(ids):
-    url_rasm = 'https://random.dog/doggos'
-    r1 = requests.get(url_rasm)
+    url_randomdogs = 'https://random.dog/doggos'
+    r1 = requests.get(url_randomdogs)
     choise = r1.json()
     # pprint(choise)
     url = f'https://api.telegram.org/bot{token}/sendPhoto'
